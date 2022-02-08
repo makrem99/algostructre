@@ -1,0 +1,17 @@
+ALGORITHM same
+VAR
+    tab1, tab2 : ARRAY_OF INTEGER[];
+    h,k: INTEGER
+    sum : INTEGER := 0;
+BEGIN
+tab1:{1,5,48,6};
+tab2:{2,5,6,8};
+FOR h FROM 0 TO tab1.length STEP 1  DO
+    FOR k FROM 0 TO tab2.length STEP 1  DO
+        IF (tab1[h]= tab2[k]) THEN
+            sum : = sum+ tab1[h]
+        END_IF
+    END_FOR
+END_FOR
+write(sum);
+END
